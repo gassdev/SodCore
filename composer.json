@@ -1,14 +1,45 @@
 {
-    "name": "sod/sodcore",
-    "description": "A simple PHP framework for building web application",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "gassdev",
-            "email": "gassdev@gmail.com"
-        }
-    ],
-    "minimum-stability": "alpha",
-    "require": {}
+  "name": "sod/sodcore",
+  "description": "A simple PHP framework for building web application",
+  "keywords": [
+    "framework",
+    "php",
+    "sodcore"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "readme": "",
+  "time": "",
+  "support": {
+    "issues": "https://github.com/gassdev/SodCore/issues",
+    "source": "https://github.com/gassdev/SodCore",
+    "wiki": "https://github.com/gassdev/SodCore/wiki"
+  },
+  "authors": [
+    {
+      "name": "gassdev",
+      "email": "gassdev@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "require": {
+    "php": "7.4.2|^8.0",
+    "ext-mbstring": "*",
+    "ext-iconv": "*",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sod\\": "src/Sod"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sod\\Tests\\": "tests/"
+    }
+  }
 }
